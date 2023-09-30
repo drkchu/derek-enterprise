@@ -37,60 +37,33 @@
       </button>
       <nav class="nav">
         <ul class="nav__list">
-          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
           <li class="nav__item">
-            <a href="#about" class="nav__link">About Me</a>
+            <a href="index.html#about" class="nav__link">About Me</a>
           </li>
           <li class="nav__item">
-            <a href="#projects" class="nav__link">Projects</a>
+            <a href="index.html#projects" class="nav__link">Projects</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <!--Introduction-->
+    <!--Wishlist Project Introduction-->
     <section class="intro" id="home">
-      <h1 class="section__title section__title--intro">
-        Hello, I'm <strong>Derek Chu</strong>
-      </h1>
-      <p class="section__subtitle section__subtitle--intro">
-        SOFTWARE ENGINEER
-      </p>
-      <img src="img/derek.jpg" alt="a picture of Derek Chu smiling" width="420" height="auto" class="intro__img"/>
-      <a href="#projects" class="btn">my projects</a>
+        <h1 class="section__title section__title--intro">
+            Wishlist Managing <strong>System</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Java, Swing, and JUnit</p>
+        <img src="img/wishlist-project.png" alt="A picture of Derek's wishlist manager" class="intro__img">
     </section>
-
-    <!--About Me-->
-    <section class="about-me" id="about">
-      <h2 class="section__title section__title--about">Who I am</h2>
-      <p class="section__subtitle section__subtitle--about">Full Stack Developer from Vancouver, BC</p>
-      <div class="about-me__body">
-        <p>I'm currently studying Computer Science and Mathematics at the University of British Columbia where I'm eager to apply my theoretical knowledge and practical skills to solve real-world problems. Currently interested in computer vision and its exciting applications.</p>
-        <p>In my spare time I enjoy playing volleyball, eating out with friends, and relaxing to some various genres of R&B. Lately, I've started exploring powerlifting and I'm excited to see how far I can challenge myself!</p>
-      </div>
-      <img
-        src="img/derek2.jpg"
-        alt="Derek Chu wearing a blue hat with his friends by the pier" width="250" height="auto" class="about-me__img"
-      />
-    </section>
-
-    <!--Projects-->
-    <section class="projects" id="projects">
-      <h2 class="section__title">Projects</h2>
-      <p class="section__subtitle">A selection of things I've made and contributed to</p>
-
-      <div class="portfolio">
-        <!--Portfolio Item 1: Wishlist Manager -->
-        <a href="wishlist.html" class="portfolio__item">
-          <img src="img/wishlist-project.png" alt="Image of a wishlist managing system" class="portfolio__img" />
-        </a>
-
-        <!--Portfolio Item 2: Web Calculator -->
-        <a href="" class="portfolio__item">
-          <img src="img/calculator-project.png" alt="Image of a on-screen calculator" class="portfolio__img" />
-        </a>
-      </div>
-    </section>
+    
+    <div class="portfolio-item-individual">
+        <p>Online shopping can be overwhelming, especially when trying to stick to a budget or managing a long list of desired items. To address these challenges, I've developed an application that empowers users to create and manage wishlists. These wishlists can store items with customizable attributes like priority, cost, and purchase location. My goal in creating this app is to simplify the online shopping experience, making it more enjoyable and stress-free for everyone.</p>
+        <img src="img/wishlist-project-uml.jpg" alt="UML design diagram for Derek's wishlist manager">
+        <p>
+          This project has been an invaluable learning experience for me. It has provided a solid foundation in <strong>object-oriented programming</strong> and illuminated the intricacies of <strong>data persistence</strong> through JSON objects for reading and writing data from saved files. Moreover, I've had the opportunity to apply essential design principles introduced in my software construction course.</p>
+        <p>One noteworthy aspect of this project involved reviewing how I could improve the project as a whole. One improvement was through adopting the <strong>observer</strong> design pattern. In this case, I would have my wishlist extend a new abstract class called Subject. Subject would have a list of observers, where observer is an interface. Finally, I would have all my GUI components implement observer so that each observer would have their own update method. This approach significantly reduced coupling between the wishlist and GUI components. By employing this pattern, notifications are automatically sent when changes occur in the wishlist, allowing each component to update seamlessly.</p>
+    </div>
 
     <!--Footer-->
     <footer class="footer">
